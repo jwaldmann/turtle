@@ -1,0 +1,27 @@
+-- NOTE: if OpenGLRaw does not work with ghc-7.8,
+-- cabal install --with-ghc=ghc-7.6.3
+
+name:                turtle
+version:             0.1.0.0
+-- synopsis:            
+-- description:         
+homepage:            https://github.com/jwaldmann/turtle
+license:             GPL-3
+license-file:        LICENSE
+author:              Johannes Waldmann
+maintainer:          waldmann@imn.htwk-leipzig.de
+-- copyright:           
+category:            Math
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+tested-with:         GHC==7.6.3
+
+executable turtle
+  main-is:             code/Q.hs
+  -- other-modules:       
+  -- other-extensions:    
+  build-depends:       base, random, gloss
+  -- hs-source-dirs:      
+  default-language:    Haskell2010
